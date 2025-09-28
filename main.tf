@@ -1,7 +1,7 @@
 data "archive_file" "lambda_zip_file" {
   type        = "zip"
-  source_file = "C:/Users/Balaji/Lambda_Terraform/index.js"
-  output_path = "C:/Users/Balaji/Lambda_Terraform/index.zip"
+  source_file = "/Lambda_Terraform/index.js"
+  output_path = "/Lambda_Terraform/index.zip"
 }
 
 resource "aws_iam_role" "lambda_role" {
