@@ -17,7 +17,7 @@ resource "aws_iam_role_policy_attachment" "lambda_policy" {
 }
 
 resource "aws_lambda_function" "lambda_demo" {
-  filename         = "C:/Users/Balaji/Lambda_Terraform/index.zip"
+  filename         = "/Lambda_Terraform/index.zip"
   function_name    = "lambda_demo"
   role             = aws_iam_role.lambda_role.arn
   handler          = "index.handler"
